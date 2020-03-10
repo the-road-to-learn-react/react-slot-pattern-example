@@ -1,19 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import logo from './logo.svg';
 import './App.css';
 
-class App extends Component {
-  render() {
-    const user = {
-      name: 'Robin Wieruch',
-      biography: 'Software Engineer ...',
-      avatarUrl: logo,
-    };
+const App = () => {
+  const user = {
+    name: 'Robin Wieruch',
+    biography: 'Software Engineer ...',
+    avatarUrl: logo,
+  };
 
-    return <User user={user} />;
-  }
-}
+  return <User user={user} />;
+};
 
 const User = ({ user }) => (
   <Profile
